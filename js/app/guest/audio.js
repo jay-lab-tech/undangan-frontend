@@ -26,12 +26,19 @@ export const audio = (() => {
          */
         let audioEl = null;
 
-        document.addEventListener('undangan.open', () => {
+        /**
+         * @type {() => Promise<void>}
+         */
+        let playOnOpenNow = async () => { };
+
+        document.addEventListener('undangan.open', async () => {
             isOpened = true;
 
             if (music) {
                 music.classList.remove('d-none');
             }
+
+            await playOnOpenNow();
         });
 
         try {
@@ -77,6 +84,12 @@ export const audio = (() => {
             isPlay = false;
             audioEl.pause();
             music.innerHTML = statePause;
+        };
+
+        playOnOpenNow = async () => {
+            if (playOnOpen) {
+                await play();
+            }
         };
 
         if (isOpened && playOnOpen) {
