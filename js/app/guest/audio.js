@@ -1,6 +1,5 @@
 import { progress } from './progress.js';
 import { util } from '../../common/util.js';
-import { cache } from '../../connection/cache.js';
 
 export const audio = (() => {
 
@@ -36,11 +35,12 @@ export const audio = (() => {
         });
 
         try {
-            audioEl = new Audio(await cache('audio').withForceCache().get(url));
+            audioEl = new Audio(url);
             audioEl.loop = true;
             audioEl.muted = false;
             audioEl.autoplay = false;
             audioEl.controls = false;
+            audioEl.preload = 'auto';
 
             progress.complete('audio');
         } catch {
