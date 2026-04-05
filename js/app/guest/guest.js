@@ -207,9 +207,6 @@ export const guest = (() => {
      * @returns {void}
      */
     const showStory = (div) => {
-        if (navigator.vibrate) {
-            navigator.vibrate(500);
-        }
         util.changeOpacity(div, false).then((e) => e.remove());
     };
 
