@@ -19,10 +19,21 @@ export const audio = (() => {
             return;
         }
 
+        let isOpened = false;
+        const music = document.getElementById('button-music');
+
         /**
          * @type {HTMLAudioElement|null}
          */
         let audioEl = null;
+
+        document.addEventListener('undangan.open', () => {
+            isOpened = true;
+
+            if (music) {
+                music.classList.remove('d-none');
+            }
+        });
 
         try {
             audioEl = new Audio(await cache('audio').withForceCache().get(url));
@@ -38,7 +49,6 @@ export const audio = (() => {
         }
 
         let isPlay = false;
-        const music = document.getElementById('button-music');
 
         /**
          * @returns {Promise<void>}
@@ -69,13 +79,9 @@ export const audio = (() => {
             music.innerHTML = statePause;
         };
 
-        document.addEventListener('undangan.open', () => {
-            music.classList.remove('d-none');
-
-            if (playOnOpen) {
-                play();
-            }
-        });
+        if (isOpened && playOnOpen) {
+            await play();
+        }
 
         music.addEventListener('offline', pause);
         music.addEventListener('click', () => isPlay ? pause() : play());
