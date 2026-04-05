@@ -96,7 +96,7 @@ export const image = (() => {
         const runGroup = async (filter) => {
             urlCache.length = 0;
             imgs.filter(filter).forEach((el) => el.hasAttribute('data-src') ? getByFetch(el) : getByDefault(el));
-            await c.run(urlCache, progress.getAbort());
+            await c.run(urlCache);
         };
 
         await runGroup((el) => el.hasAttribute('fetchpriority'));
