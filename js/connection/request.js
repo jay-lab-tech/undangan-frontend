@@ -156,6 +156,7 @@ export const request = (method, path) => {
     let reqAttempts = 0;
     let reqNoBody = false;
     let reqForceCache = false;
+    let reqSilent = false;
 
     /**
      * @type {string|null}
@@ -359,7 +360,9 @@ export const request = (method, path) => {
                     err = new Error('🟥 Network error or rate limit exceeded');
                 }
 
-                alert(err.message ?? String(err));
+                if (!reqSilent) {
+                    alert(err.message ?? String(err));
+                }
                 throw err;
             });
         },
@@ -382,6 +385,13 @@ export const request = (method, path) => {
                 reqTtl = ttl;
             }
 
+            return this;
+        },
+        /**
+         * @returns {ReturnType<typeof request>}
+         */
+        silent() {
+            reqSilent = true;
             return this;
         },
         /**

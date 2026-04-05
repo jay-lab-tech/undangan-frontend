@@ -386,28 +386,26 @@ export const guest = (() => {
             progress.add();
             progress.add();
 
-            // if don't have data-src.
-            if (!img.hasDataSrc()) {
+            if (img.hasDataSrc()) {
                 img.load();
             }
+
+            vid.load();
+            aud.load();
+            lib.load({ confetti: document.body.getAttribute('data-confetti') === 'true' });
 
             session.guest(params.get('k') ?? token).then(({ data }) => {
                 document.dispatchEvent(new Event('undangan.session'));
                 progress.complete('config');
 
-                if (img.hasDataSrc()) {
-                    img.load();
-                }
-
-                vid.load();
-                aud.load();
-                lib.load({ confetti: data.is_confetti_animation });
-
                 comment.show()
                     .then(() => progress.complete('comment'))
                     .catch(() => progress.invalid('comment'));
 
-            }).catch(() => progress.invalid('config'));
+            }).catch(() => {
+                progress.invalid('config');
+                progress.invalid('comment');
+            });
         }
     };
 
