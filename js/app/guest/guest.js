@@ -11,7 +11,6 @@ import { storage } from '../../common/storage.js';
 import { session } from '../../common/session.js';
 import { offline } from '../../common/offline.js';
 import { comment } from '../components/comment.js';
-import * as confetti from '../../libs/confetti.js';
 import { pool } from '../../connection/request.js';
 
 export const guest = (() => {
@@ -171,9 +170,6 @@ export const guest = (() => {
         slide();
         theme.spyTop();
 
-        confetti.basicAnimation();
-        util.timeOut(confetti.openAnimation, 1500);
-
         document.dispatchEvent(new Event('undangan.open'));
         util.changeOpacity(document.getElementById('welcome'), false).then((el) => el.remove());
     };
@@ -214,8 +210,6 @@ export const guest = (() => {
         if (navigator.vibrate) {
             navigator.vibrate(500);
         }
-
-        confetti.tapTapAnimation(div, 100);
         util.changeOpacity(div, false).then((e) => e.remove());
     };
 
@@ -377,7 +371,7 @@ export const guest = (() => {
             vid.load();
             img.load();
             aud.load();
-            lib.load({ confetti: document.body.getAttribute('data-confetti') === 'true' });
+            lib.load({ confetti: false });
         }
 
         if (token && token.length > 0) {
@@ -392,7 +386,7 @@ export const guest = (() => {
 
             vid.load();
             aud.load();
-            lib.load({ confetti: document.body.getAttribute('data-confetti') === 'true' });
+            lib.load({ confetti: false });
 
             session.guest(params.get('k') ?? token).then(({ data }) => {
                 document.dispatchEvent(new Event('undangan.session'));
