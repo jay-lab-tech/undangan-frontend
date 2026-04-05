@@ -252,7 +252,13 @@ export const guest = (() => {
          * @param {string} d 
          * @returns {string}
          */
-        const formatDate = (d) => (new Date(d.replace(' ', 'T') + ':00Z')).toISOString().replace(/[-:]/g, '').split('.').shift();
+        const formatDate = (d) => {
+            const normalized = d.replace(' ', 'T');
+            const hasSeconds = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$/.test(normalized);
+            const isoInput = hasSeconds ? `${normalized}Z` : `${normalized}:00Z`;
+
+            return (new Date(isoInput)).toISOString().replace(/[-:]/g, '').split('.').shift();
+        };
 
         const startDate = document.body.getAttribute('data-calendar-start') ?? document.body.getAttribute('data-time');
         const endDate = document.body.getAttribute('data-calendar-end');
