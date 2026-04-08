@@ -116,12 +116,12 @@
 
                 <!-- Home -->
                 <section id="home" class="bg-light-dark position-relative overflow-hidden p-0 m-0">
-                    <img src="./assets/images/placeholder.webp" data-src="./assets/images/bg-mempelai.webp" alt="bg" class="position-absolute opacity-25 top-50 start-50 translate-middle bg-cover-home">
+                    <img src="./assets/images/placeholder.webp" data-src="./assets/images/bg.webp" alt="bg" class="position-absolute opacity-25 top-50 start-50 translate-middle bg-cover-home">
 
                     <div class="position-relative text-center bg-overlay-auto" style="background-color: unset;">
                         <h1 class="font-esthetic pt-5 pb-4 fw-medium" style="font-size: 2.25rem;">Undangan Pernikahan</h1>
 
-                        <img src="./assets/images/placeholder.webp" data-src="./assets/images/bg-mempelai.webp" alt="bg" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer">
+                        <img src="./assets/images/placeholder.webp" data-src="./assets/images/bg.webp" alt="bg" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer">
 
                         <h2 class="font-esthetic my-4" style="font-size: 2.25rem;">Nama Mempelai Pria &amp; Nama Mempelai Wanita</h2>
                         <p class="my-2" style="font-size: 1.25rem;">Minggu, 10 Januari 2027</p>
@@ -566,12 +566,16 @@
     </div>
 
     <!-- Welcome Page -->
-    <div class="loading-page bg-white-black" id="welcome" style="opacity: 1;">
+    <div class="loading-page bg-white-black position-relative overflow-hidden" id="welcome" style="opacity: 1;">
+        <div class="welcome-background" aria-hidden="true">
+            <img src="./assets/images/bg-mempelai.webp" alt="" class="welcome-background-image">
+        </div>
+        <div class="welcome-overlay" aria-hidden="true"></div>
         <div class="d-flex justify-content-center align-items-center vh-100 overflow-y-auto">
-            <div class="d-flex flex-column text-center">
+            <div class="d-flex flex-column text-center position-relative z-1">
                 <h2 class="font-esthetic mb-4" style="font-size: 2.25rem;">Undangan Pernikahan</h2>
 
-                <img src="./assets/images/placeholder.webp" data-src="./assets/images/bg-mempelai.webp" alt="background" class="img-center-crop rounded-circle border border-3 border-light shadow mb-4 mx-auto">
+                <img src="./assets/images/placeholder.webp" data-src="./assets/images/bg.webp" alt="background" class="img-center-crop rounded-circle border border-3 border-light shadow mb-4 mx-auto">
 
                         <h2 class="font-esthetic mb-4" style="font-size: 2.25rem;">Nama Mempelai Pria &amp; Nama Mempelai Wanita</h2>
                 <div id="guest-name" data-message="Kepada Yth. Bapak/Ibu/Saudara/i"></div>
