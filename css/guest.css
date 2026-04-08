@@ -96,8 +96,8 @@ html[data-bs-theme="dark"] .bg-white-black {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 35%;
-    transform: scale(1.02);
+    object-position: 50% 18%;
+    transform: none;
     filter: saturate(0.95) brightness(0.72);
 }
 
