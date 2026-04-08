@@ -54,10 +54,19 @@ html[data-bs-theme="light"] .btn-transparent {
     object-position: center;
     opacity: 0.24;
     filter: saturate(0.92);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.welcome-stage {
+    position: relative;
+    z-index: 1;
 }
 
 .welcome-content {
     max-width: min(92vw, 42rem);
+    position: relative;
+    z-index: 2;
 }
 
 html[data-bs-theme="light"] .color-theme-svg {
