@@ -80,6 +80,7 @@ html[data-bs-theme="dark"] .bg-white-black {
 
 .bride-section {
     isolation: isolate;
+    color: rgba(255, 255, 255, 0.96);
 }
 
 .bride-section-background,
@@ -99,6 +100,17 @@ html[data-bs-theme="dark"] .bg-white-black {
     object-position: 50% 18%;
     transform: none;
     filter: saturate(0.95) brightness(0.72);
+}
+
+.bride-section p,
+.bride-section h2,
+.bride-section svg,
+.bride-section .text-secondary {
+    color: rgba(255, 255, 255, 0.96) !important;
+}
+
+.bride-section .border-light {
+    border-color: rgba(255, 255, 255, 0.92) !important;
 }
 
 .bride-section-overlay {
