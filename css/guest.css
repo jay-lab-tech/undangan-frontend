@@ -45,13 +45,6 @@ html[data-bs-theme="light"] .btn-transparent {
     z-index: 1056;
 }
 
-.welcome-page-photo {
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.55) 35%, rgba(255, 255, 255, 0.8)),
-        radial-gradient(circle at top left, rgba(255, 255, 255, 0.4), transparent 35%),
-        url('../assets/images/bg-mempelai.webp') center / cover no-repeat;
-}
-
 html[data-bs-theme="light"] .color-theme-svg {
     color: rgb(255, 255, 255);
     background-color: var(--bs-light);
