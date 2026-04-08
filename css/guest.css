@@ -168,13 +168,19 @@ html[data-bs-theme="dark"] .bg-white-black {
     }
 
     .welcome-background-image {
-        object-fit: contain;
-        object-position: center;
-        opacity: 0.28;
+        object-fit: cover;
+        object-position: center 42%;
+        opacity: 0.48;
+        transform: scale(1.08);
     }
 
     .welcome-stage {
         padding: 1rem;
+    }
+
+    .welcome-content {
+        background-color: rgba(255, 255, 255, 0.45) !important;
+        backdrop-filter: blur(0.35rem);
     }
 }
 
