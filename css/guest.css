@@ -73,6 +73,15 @@ html[data-bs-theme="light"] .btn-transparent {
     backdrop-filter: blur(0.2rem);
 }
 
+.welcome-couple-name span {
+    display: block;
+}
+
+.welcome-couple-separator {
+    line-height: 0.85;
+    margin: 0.15rem 0;
+}
+
 html[data-bs-theme="light"] .color-theme-svg {
     color: rgb(255, 255, 255);
     background-color: var(--bs-light);
