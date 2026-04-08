@@ -45,28 +45,22 @@ html[data-bs-theme="light"] .btn-transparent {
     z-index: 1056;
 }
 
-.welcome-background-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    opacity: 0.24;
-    filter: saturate(0.92);
-    z-index: 0;
-    pointer-events: none;
-}
-
-.welcome-stage {
-    position: relative;
-    z-index: 1;
-}
-
 .welcome-content {
     max-width: min(92vw, 42rem);
     position: relative;
-    z-index: 2;
+    overflow: hidden;
+}
+
+.welcome-card-image {
+    width: min(78vw, 22rem);
+    height: min(78vw, 22rem);
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.18;
+    filter: saturate(0.92);
+    border-radius: 2rem;
+    margin: 0 auto 1.5rem;
 }
 
 html[data-bs-theme="light"] .color-theme-svg {
