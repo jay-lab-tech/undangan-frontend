@@ -157,6 +157,17 @@ html[data-bs-theme="dark"] .bg-white-black {
         radial-gradient(circle at top right, rgba(255, 255, 255, 0.12), transparent 35%);
 }
 
+.gift-intro-card {
+    max-width: 22rem;
+    margin-inline: auto;
+}
+
+.gift-intro-icon {
+    font-size: 3.25rem;
+    line-height: 1;
+    color: rgba(var(--bs-secondary-rgb), 0.92);
+}
+
 .width-loading {
     width: 25%;
 }
