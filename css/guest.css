@@ -158,8 +158,6 @@ html[data-bs-theme="dark"] .bg-white-black {
 }
 
 .gift-intro-card {
-    max-width: 22rem;
-    margin-inline: auto;
     transition:
         opacity 260ms ease,
         transform 260ms ease,
