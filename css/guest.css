@@ -169,13 +169,14 @@ html[data-bs-theme="dark"] .bg-white-black {
 }
 
 .gift-details-collapse {
-    overflow: hidden;
+    overflow: visible;
 }
 
 .gift-details-panel {
     opacity: 0;
     transform: translateY(-0.75rem) scale(0.985);
     transition: opacity 320ms ease, transform 320ms ease;
+    padding-bottom: 0.75rem;
 }
 
 .gift-details-collapse.show .gift-details-panel {
