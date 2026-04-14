@@ -168,6 +168,26 @@ html[data-bs-theme="dark"] .bg-white-black {
     color: rgba(var(--bs-secondary-rgb), 0.92);
 }
 
+.gift-details-collapse {
+    overflow: hidden;
+}
+
+.gift-details-panel {
+    opacity: 0;
+    transform: translateY(-0.75rem) scale(0.985);
+    transition: opacity 320ms ease, transform 320ms ease;
+}
+
+.gift-details-collapse.show .gift-details-panel {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.gift-details-collapse.collapsing .gift-details-panel {
+    opacity: 0.4;
+    transform: translateY(-0.35rem) scale(0.992);
+}
+
 .width-loading {
     width: 25%;
 }
