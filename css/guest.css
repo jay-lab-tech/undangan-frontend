@@ -159,18 +159,18 @@ html[data-bs-theme="dark"] .bg-white-black {
 
 .gift-intro-card {
     transition:
-        opacity 260ms ease,
-        transform 260ms ease,
-        max-height 260ms ease,
-        margin 260ms ease,
-        padding 260ms ease;
+        opacity 420ms cubic-bezier(0.22, 1, 0.36, 1),
+        transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+        max-height 420ms cubic-bezier(0.22, 1, 0.36, 1),
+        margin 420ms cubic-bezier(0.22, 1, 0.36, 1),
+        padding 420ms cubic-bezier(0.22, 1, 0.36, 1);
     max-height: 32rem;
     overflow: hidden;
 }
 
 .gift-intro-card-hide {
     opacity: 0;
-    transform: translateY(-0.5rem) scale(0.98);
+    transform: translateY(-0.35rem) scale(0.985);
     max-height: 0;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -191,19 +191,46 @@ html[data-bs-theme="dark"] .bg-white-black {
 
 .gift-details-panel {
     opacity: 0;
-    transform: translateY(-0.75rem) scale(0.985);
-    transition: opacity 320ms ease, transform 320ms ease;
+    transform: translateY(-0.5rem) scale(0.99);
+    filter: blur(0.35rem);
+    transition:
+        opacity 420ms cubic-bezier(0.22, 1, 0.36, 1),
+        transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+        filter 420ms cubic-bezier(0.22, 1, 0.36, 1);
     padding-bottom: 0.75rem;
 }
 
 .gift-details-collapse.show .gift-details-panel {
     opacity: 1;
     transform: translateY(0) scale(1);
+    filter: blur(0);
 }
 
 .gift-details-collapse.collapsing .gift-details-panel {
-    opacity: 0.4;
-    transform: translateY(-0.35rem) scale(0.992);
+    opacity: 0.55;
+    transform: translateY(-0.2rem) scale(0.995);
+    filter: blur(0.15rem);
+}
+
+.gift-details-panel > div {
+    opacity: 0;
+    transform: translateY(0.6rem);
+    transition:
+        opacity 380ms cubic-bezier(0.22, 1, 0.36, 1),
+        transform 380ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.gift-details-collapse.show .gift-details-panel > div {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gift-details-collapse.show .gift-details-panel > div:nth-child(2) {
+    transition-delay: 60ms;
+}
+
+.gift-details-collapse.show .gift-details-panel > div:nth-child(3) {
+    transition-delay: 120ms;
 }
 
 .width-loading {
