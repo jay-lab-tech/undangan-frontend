@@ -46,3 +46,35 @@ html[data-bs-theme="light"] .btn-theme-auto:hover:not(.nav-link.active) {
     color: var(--bs-light) !important;
     background-color: var(--bs-danger) !important;
 }
+
+.comment-card {
+    border: 1px solid rgba(128, 128, 128, 0.14);
+}
+
+.comment-reply-card {
+    border-left-width: 0.3rem !important;
+    border-left-color: rgba(122, 92, 217, 0.4) !important;
+    background-image: linear-gradient(90deg, rgba(122, 92, 217, 0.08), transparent 4rem);
+}
+
+.admin-comment-card {
+    border-color: rgba(122, 92, 217, 0.3);
+    box-shadow: 0 0.75rem 2rem rgba(122, 92, 217, 0.12) !important;
+}
+
+.admin-comment-card .text-primary.fa-certificate {
+    color: #7a5cd9 !important;
+}
+
+.comment-editor-card {
+    background: linear-gradient(180deg, rgba(122, 92, 217, 0.08), rgba(122, 92, 217, 0.02));
+    border: 1px solid rgba(122, 92, 217, 0.18);
+    border-radius: 1rem;
+    padding: 0.9rem;
+    box-shadow: 0 0.65rem 1.4rem rgba(122, 92, 217, 0.08);
+}
+
+.reply-editor-title {
+    font-weight: 700;
+    color: #6b53c4;
+}

@@ -133,10 +133,10 @@ export const card = (() => {
      */
     const renderHeader = (c) => {
         if (c.is_parent) {
-            return `class="bg-theme-auto shadow p-3 mx-0 mt-0 mb-3 rounded-4"`;
+            return `class="comment-card ${c.is_admin ? 'admin-comment-card' : ''} bg-theme-auto shadow p-3 mx-0 mt-0 mb-3 rounded-4"`;
         }
 
-        return `class="${!showHide.get('hidden').find((i) => i.uuid === c.uuid)['show'] ? 'd-none' : ''} overflow-x-auto mw-100 border-start bg-theme-auto py-2 ps-2 pe-0 my-2 ms-2 me-0"`;
+        return `class="${!showHide.get('hidden').find((i) => i.uuid === c.uuid)['show'] ? 'd-none' : ''} comment-reply-card ${c.is_admin ? 'admin-comment-card' : ''} overflow-x-auto mw-100 border-start bg-theme-auto py-2 ps-2 pe-0 my-2 ms-2 me-0 rounded-end-4"`;
     };
 
     /**
@@ -219,10 +219,10 @@ export const card = (() => {
         id = util.escapeHtml(id);
 
         const inner = document.createElement('div');
-        inner.classList.add('my-2');
+        inner.classList.add('my-2', 'comment-editor-card');
         inner.id = `inner-${id}`;
         const template = `
-        <p class="my-1 mx-0 p-0" style="font-size: 0.95rem;"><i class="fa-solid fa-reply me-2"></i>Reply</p>
+        <p class="reply-editor-title my-1 mx-0 p-0" style="font-size: 0.95rem;"><i class="fa-solid fa-reply me-2"></i>Reply</p>
         <div class="d-block mb-2" id="comment-form-${id}">
             <div class="position-relative">
                 ${!gif.isActive() ? '' : `<button class="btn btn-secondary btn-sm rounded-4 shadow-sm me-1 my-1 position-absolute bottom-0 end-0" onclick="undangan.comment.gif.open('${id}')" aria-label="button gif" data-offline-disabled="false"><i class="fa-solid fa-photo-film"></i></button>`}
@@ -249,10 +249,10 @@ export const card = (() => {
         id = util.escapeHtml(id);
 
         const inner = document.createElement('div');
-        inner.classList.add('my-2');
+        inner.classList.add('my-2', 'comment-editor-card');
         inner.id = `inner-${id}`;
         const template = `
-        <p class="my-1 mx-0 p-0" style="font-size: 0.95rem;"><i class="fa-solid fa-pen me-2"></i>Edit</p>
+        <p class="reply-editor-title my-1 mx-0 p-0" style="font-size: 0.95rem;"><i class="fa-solid fa-pen me-2"></i>Edit</p>
         ${!is_parent ? '' : `
         <select class="form-select shadow-sm mb-2 rounded-4" id="form-inner-presence-${id}" data-offline-disabled="false">
             <option value="1" ${presence ? 'selected' : ''}>&#9989; Datang</option>
