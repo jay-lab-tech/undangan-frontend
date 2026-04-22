@@ -157,6 +157,12 @@ html[data-bs-theme="dark"] .bg-white-black {
         radial-gradient(circle at top right, rgba(255, 255, 255, 0.12), transparent 35%);
 }
 
+.story-photo {
+    height: 14rem;
+    object-fit: cover;
+    object-position: center;
+}
+
 .gift-intro-card {
     transition:
         opacity 680ms cubic-bezier(0.22, 1, 0.36, 1),
