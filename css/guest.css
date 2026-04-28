@@ -162,6 +162,27 @@ html[data-bs-theme="dark"] .bg-white-black {
         radial-gradient(circle at top right, rgba(255, 255, 255, 0.12), transparent 35%);
 }
 
+.wedding-date-section {
+    isolation: isolate;
+}
+
+.wedding-date-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.18;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.wedding-date-section > .container {
+    position: relative;
+    z-index: 1;
+}
+
 .story-photo {
     height: 14rem;
     object-fit: cover;
