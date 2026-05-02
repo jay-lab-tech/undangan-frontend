@@ -43,6 +43,10 @@ html {
     font-family: 'Hendrigo', cursive !important;
 }
 
+.font-serif {
+    font-family: 'Linux Libertine', serif !important;
+}
+
 .font-arabic {
     font-family: 'Noto Naskh Arabic', serif !important;
 }
