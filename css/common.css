@@ -97,12 +97,12 @@ html[data-bs-theme="light"] .btn-outline-auto {
 }
 
 html[data-bs-theme="dark"] .bg-overlay-auto {
-    background-color: rgba(var(--bs-black-rgb), 0.5);
+    background-color: rgba(var(--bs-black-rgb), 1);
     backdrop-filter: blur(0.25rem);
 }
 
 html[data-bs-theme="light"] .bg-overlay-auto {
-    background-color: rgba(var(--bs-white-rgb), 0.5);
+    background-color: rgba(var(--bs-white-rgb), 1);
     backdrop-filter: blur(0.25rem);
 }
 
