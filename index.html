@@ -89,7 +89,7 @@
                 <div class="d-flex position-absolute w-100 h-100">
                     <div class="position-relative overflow-hidden vw-100">
                         <div class="position-absolute h-100 w-100" style="opacity: 1;">
-            <img src="./assets/images/bg-home-new.webp" alt="bg" class="bg-cover-home desktop-cover-image" style="mask-image: none; opacity: 30%;">
+            <img src="./assets/images/bg-home-new.webp" alt="bg" class="bg-cover-home desktop-cover-image" style="mask-image: none; opacity: 0.3;">
                         </div>
                     </div>
                 </div>
@@ -109,9 +109,10 @@
 
                 <!-- Home -->
                 <section id="home" class="bg-light-dark position-relative overflow-hidden p-0 m-0">
-                    <img src="./assets/images/bg-home-new.webp" alt="bg" class="position-absolute opacity-25 top-50 start-50 translate-middle bg-cover-home">
+                    <img src="./assets/images/bg-home-new.webp" alt="bg" class="position-absolute top-50 start-50 translate-middle bg-cover-home" style="opacity: 1; mask-image: none;">
+                    <div class="home-background-overlay"></div>
 
-                    <div class="position-relative text-center bg-overlay-auto" style="background-color: unset;">
+                    <div class="position-relative text-center home-background-content">
                         <h1 class="font-esthetic pt-5 pb-4 fw-bold" style="font-size: 1.5rem;">The Wedding of</h1>
 
                         <h2 class="font-esthetic my-4 welcome-couple-name" style="font-size: 2.75rem;">Aufa &amp; Hafizh</h2>
@@ -150,6 +151,7 @@
                     </div>
                     <div class="bride-section-overlay" aria-hidden="true"></div>
                     <div class="position-relative z-1">
+                    <p class="px-2 m-0" style="font-size: 1.25rem; padding-top: 2rem; padding-bottom: 2rem;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
                     <p class="px-2 m-0" style="font-size: 0.95rem; padding-top: 2rem; padding-bottom: 2rem;">With the blessings and grace of Allah SWT, we cordially invite you to attend our wedding ceremony:</p>
 
                         <div class="overflow-x-hidden pb-4">
@@ -424,9 +426,11 @@
                 </div>
 
                 <!-- End Of Invitation -->
-                <section class="bg-white-black py-2 no-gap-bottom">
-                    <div class="container text-center">
-                        <div class="mx-auto mb-4" style="width: 220px; height: 420px; border: 5px solid currentColor; border-radius: 999px; overflow: hidden;">
+                <div class="shared-story-date-section position-relative overflow-hidden">
+                    <img src="./assets/images/background2.webp" alt="background moment bahagia" class="shared-story-date-background">
+                    <section class="bg-white-black py-2 no-gap-bottom shared-story-date-panel">
+                        <div class="container text-center">
+                            <div class="mx-auto mb-4" style="width: 220px; height: 420px; border: 5px solid currentColor; border-radius: 999px; overflow: hidden;">
                             <img src="./assets/images/foto-footer.webp" alt="Aufa & Hafizh" class="w-100 h-100" style="object-fit: cover; display: block;" />
                         </div>
                         <p class="pb-2 pt-4" style="font-size: 0.95rem;">Your presence and blessings would be a great honor to us.<br>We sincerely appreciate your kind attendance and prayers.</p>
@@ -436,6 +440,7 @@
                         <hr class="my-3">
                     </div>
                 </section>
+                </div>
             </main>
 
             <!-- Navbar Bottom -->
@@ -444,25 +449,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#home">
                             <i class="fa-solid fa-house"></i>
-                            <span class="d-block" style="font-size: 0.7rem;">Home</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#bride">
                             <i class="fa-solid fa-user-group"></i>
-                            <span class="d-block" style="font-size: 0.7rem;">Mempelai</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#wedding-date">
                             <i class="fa-solid fa-calendar-check"></i>
-                            <span class="d-block" style="font-size: 0.7rem;">Tanggal</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#comment">
                             <i class="fa-solid fa-comments"></i>
-                            <span class="d-block" style="font-size: 0.7rem;">Ucapan</span>
                         </a>
                     </li>
                 </ul>
@@ -476,6 +477,8 @@
         <div class="welcome-stage d-flex justify-content-center align-items-center h-100">
             <div class="d-flex flex-column text-center position-relative p-4 welcome-content" style="width: 500px;">
                 <h2 class="font-esthetic mb-4" style="font-size: 2.75rem;">The Wedding of</h2>
+
+                <img src="./assets/images/profile.webp" alt="background" class="img-center-crop rounded-circle border border-3 border-light shadow mb-4 mx-auto">
 
                 <h2 class="font-esthetic mb-4 welcome-couple-name" style="font-size: 2.75rem;">Aufa &amp; Hafizh</h2>
                 <div id="guest-name" data-message="Kepada Yth. Bapak/Ibu/Saudara/i"></div>
