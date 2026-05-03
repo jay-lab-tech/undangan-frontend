@@ -69,6 +69,15 @@ html[data-bs-theme="light"] .btn-transparent {
     backdrop-filter: blur(0.5rem);
 }
 
+.home-background-content > .bg-overlay-auto,
+#root .sticky-top .bg-overlay-auto,
+#home .bg-overlay-auto {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+    border: none !important;
+}
+
 .loading-page {
     position: fixed;
     inset: 0;
@@ -143,6 +152,17 @@ html[data-bs-theme="light"] .bg-white-black {
 
 html[data-bs-theme="dark"] .bg-white-black {
     background-color: rgb(var(--bs-black-rgb));
+}
+
+#welcome.bg-white-black,
+#loading.bg-white-black {
+    background-color: transparent !important;
+}
+
+#welcome .welcome-content,
+#loading .welcome-content {
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
 #home {
@@ -230,10 +250,11 @@ html[data-bs-theme="dark"] .bg-white-black {
 
 #home .btn-outline-auto {
     color: #fff !important;
-    background-color: rgba(0, 0, 0, 0.75) !important;
-    border-color: rgba(255, 255, 255, 0.15) !important;
+    background-color: transparent !important;
+    border-color: rgba(255, 255, 255, 0.85) !important;
     box-shadow: none !important;
     display: inline-flex !important;
+    align-items: center !important;
     width: auto !important;
     max-width: fit-content !important;
     justify-content: center !important;
@@ -245,12 +266,13 @@ html[data-bs-theme="dark"] .bg-white-black {
 #home .btn-outline-auto:focus,
 #home .btn-outline-auto:active {
     color: #fff !important;
-    background-color: rgba(0, 0, 0, 0.85) !important;
-    border-color: rgba(255, 255, 255, 0.25) !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 1) !important;
 }
 
 #home .btn-outline-auto .fa-solid {
     color: #fff !important;
+    margin-right: 0.5rem;
 }
 
 .bride-section {
@@ -452,11 +474,45 @@ html[data-bs-theme="dark"] .bg-white-black {
     }
 }
 
+#welcome,
+#loading,
+#welcome .welcome-stage,
+#loading .welcome-stage,
+#welcome .welcome-content,
+#loading .welcome-content {
+    background-color: transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
 svg {
     display: block;
     line-height: 0;
     shape-rendering: geometricPrecision;
     backface-visibility: hidden;
+}
+
+#welcome,
+#loading,
+#welcome .welcome-stage,
+#loading .welcome-stage,
+#welcome .welcome-content,
+#loading .welcome-content {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+#root .sticky-top .bg-overlay-auto:not(.btn),
+#root .position-relative.bg-white-black > .bg-overlay-auto {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
 }
 
 .svg-wrapper {
