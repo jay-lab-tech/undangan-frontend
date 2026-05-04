@@ -146,6 +146,90 @@ html[data-bs-theme="dark"] .bg-light-dark {
     background-color: rgb(var(--bs-dark-rgb));
 }
 
+section#gift,
+section#comment {
+    background-image: url("../assets/images/bg-pink.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #731111;
+}
+
+section#gift h2,
+section#comment h2,
+section#gift p,
+section#comment p,
+section#gift label,
+section#comment label,
+section#gift small,
+section#comment small,
+section#gift .form-label,
+section#comment .form-label,
+section#gift .gift-intro-icon,
+section#gift .gift-detail-card i,
+section#comment i {
+    color: #731111 !important;
+}
+
+section#gift i,
+section#comment i {
+    color: #731111 !important;
+}
+
+section#gift .gift-intro-card,
+section#gift .gift-detail-card,
+section#comment .border.rounded-5.shadow {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    border: 1px solid rgba(115, 17, 17, 0.4) !important;
+    color: #731111;
+    backdrop-filter: blur(0.15rem);
+}
+
+section#gift .form-control,
+section#comment .form-control,
+section#comment .form-select,
+section#gift .form-select {
+    color: #731111 !important;
+    border-color: rgba(115, 17, 17, 0.4) !important;
+}
+
+section#gift .form-control::placeholder,
+section#comment .form-control::placeholder {
+    color: rgba(115, 17, 17, 0.7) !important;
+}
+
+section#gift .btn-secondary,
+section#gift .btn-outline-auto,
+section#comment .btn-outline-auto,
+section#comment .btn-secondary,
+section#comment .btn-primary {
+    color: #731111 !important;
+    border-color: rgba(115, 17, 17, 0.4) !important;
+}
+
+section#gift .btn-secondary,
+section#comment .btn-primary {
+    background-color: #ffffff !important;
+    color: #731111 !important;
+    border-color: #731111 !important;
+    box-shadow: none !important;
+}
+
+section#gift .btn-secondary:hover,
+section#gift .btn-secondary:focus,
+section#comment .btn-primary:hover,
+section#comment .btn-primary:focus {
+    background-color: #f5f5f5 !important;
+    color: #731111 !important;
+    border-color: #731111 !important;
+}
+
+section#gift .gift-intro-icon,
+section#gift .gift-detail-card i,
+section#comment .gift-intro-icon i {
+    color: #731111 !important;
+}
+
 html[data-bs-theme="light"] .bg-white-black {
     background-color: rgb(var(--bs-white-rgb));
 }
@@ -194,7 +278,7 @@ html[data-bs-theme="dark"] .bg-white-black {
     width: min(100%, 44rem);
     margin: 0 auto;
     padding: 1.25rem 1.5rem 2rem;
-    color: #fff;
+    color: #F1DFB1;
     text-shadow: 0 2px 18px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
@@ -232,26 +316,26 @@ html[data-bs-theme="dark"] .bg-white-black {
 #home .text-secondary,
 #home .mouse-animation,
 #home .mouse-animation .scroll-animation {
-    color: #fff !important;
-    border-color: #fff !important;
+    color: #F1DFB1 !important;
+    border-color: #F1DFB1 !important;
 }
 
 #home .mouse-animation {
-    border-color: #fff !important;
+    border-color: #F1DFB1 !important;
 }
 
 #home .mouse-animation .scroll-animation {
-    background-color: #fff !important;
+    background-color: #F1DFB1 !important;
 }
 
 #home p.text-secondary {
-    color: #fff !important;
+    color: #F1DFB1 !important;
 }
 
 #home .btn-outline-auto {
-    color: #fff !important;
+    color: #F1DFB1 !important;
     background-color: transparent !important;
-    border-color: rgba(255, 255, 255, 0.85) !important;
+    border-color: rgba(241, 223, 177, 0.85) !important;
     box-shadow: none !important;
     display: inline-flex !important;
     align-items: center !important;
@@ -265,19 +349,19 @@ html[data-bs-theme="dark"] .bg-white-black {
 #home .btn-outline-auto:hover,
 #home .btn-outline-auto:focus,
 #home .btn-outline-auto:active {
-    color: #fff !important;
-    background-color: rgba(255, 255, 255, 0.08) !important;
-    border-color: rgba(255, 255, 255, 1) !important;
+    color: #F1DFB1 !important;
+    background-color: rgba(241, 223, 177, 0.08) !important;
+    border-color: rgba(241, 223, 177, 1) !important;
 }
 
 #home .btn-outline-auto .fa-solid {
-    color: #fff !important;
+    color: #F1DFB1 !important;
     margin-right: 0.5rem;
 }
 
 .bride-section {
     isolation: isolate;
-    color: rgba(255, 255, 255, 0.96);
+    color: rgba(241, 223, 177, 0.96);
 }
 
 .bride-section-background,
@@ -303,11 +387,11 @@ html[data-bs-theme="dark"] .bg-white-black {
 .bride-section h2,
 .bride-section svg,
 .bride-section .text-secondary {
-    color: rgba(255, 255, 255, 0.96) !important;
+    color: rgba(241, 223, 177, 0.96) !important;
 }
 
 .bride-section .border-light {
-    border-color: rgba(255, 255, 255, 0.92) !important;
+    border-color: rgba(241, 223, 177, 0.92) !important;
 }
 
 .bride-section-overlay {
@@ -337,6 +421,12 @@ html[data-bs-theme="dark"] .bg-white-black {
     position: relative;
     z-index: 1;
     background-color: transparent !important;
+    color: #731111;
+}
+
+.shared-story-date-panel p,
+.shared-story-date-panel h2 {
+    color: #731111 !important;
 }
 
 .wedding-date-section {
