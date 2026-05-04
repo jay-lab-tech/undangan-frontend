@@ -119,6 +119,24 @@ html[data-bs-theme="light"] .btn-transparent {
     backdrop-filter: blur(0.2rem);
 }
 
+#welcome .welcome-content,
+#welcome .welcome-content h2,
+#welcome .welcome-content p,
+#welcome .welcome-content #guest-name {
+    color: #5E4512 !important;
+}
+
+#welcome .btn-light {
+    color: #ffffff !important;
+    background-color: #5E4512 !important;
+    border-color: transparent !important;
+    border: none !important;
+}
+
+#welcome .btn-light .fa-solid {
+    color: #ffffff !important;
+}
+
 .welcome-couple-name span {
     display: block;
 }
@@ -180,7 +198,6 @@ section#gift .gift-intro-card,
 section#gift .gift-detail-card,
 section#comment .border.rounded-5.shadow {
     background-color: rgba(255, 255, 255, 0.4) !important;
-    border: 1px solid rgba(115, 17, 17, 0.4) !important;
     color: #731111;
     backdrop-filter: blur(0.15rem);
 }
@@ -298,7 +315,7 @@ html[data-bs-theme="dark"] .bg-white-black {
     width: min(100%, 44rem);
     margin: 0 auto;
     padding: 1.25rem 1.5rem 2rem;
-    color: #F1DFB1;
+    color: #5E4512;
     text-shadow: 0 2px 18px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
@@ -336,26 +353,27 @@ html[data-bs-theme="dark"] .bg-white-black {
 #home .text-secondary,
 #home .mouse-animation,
 #home .mouse-animation .scroll-animation {
-    color: #F1DFB1 !important;
-    border-color: #F1DFB1 !important;
+    color: #5E4512 !important;
+    border-color: #5E4512 !important;
 }
 
 #home .mouse-animation {
-    border-color: #F1DFB1 !important;
+    border-color: #5E4512 !important;
 }
 
 #home .mouse-animation .scroll-animation {
-    background-color: #F1DFB1 !important;
+    background-color: #5E4512 !important;
 }
 
 #home p.text-secondary {
-    color: #F1DFB1 !important;
+    color: #5E4512 !important;
 }
 
 #home .btn-outline-auto {
-    color: #F1DFB1 !important;
-    background-color: transparent !important;
-    border-color: rgba(241, 223, 177, 0.85) !important;
+    color: #ffffff !important;
+    background-color: #5E4512 !important;
+    border-color: transparent !important;
+    border: none !important;
     box-shadow: none !important;
     display: inline-flex !important;
     align-items: center !important;
@@ -369,13 +387,13 @@ html[data-bs-theme="dark"] .bg-white-black {
 #home .btn-outline-auto:hover,
 #home .btn-outline-auto:focus,
 #home .btn-outline-auto:active {
-    color: #F1DFB1 !important;
-    background-color: rgba(241, 223, 177, 0.08) !important;
-    border-color: rgba(241, 223, 177, 1) !important;
+    color: #ffffff !important;
+    background-color: #5E4512 !important;
+    border-color: transparent !important;
 }
 
 #home .btn-outline-auto .fa-solid {
-    color: #F1DFB1 !important;
+    color: #ffffff !important;
     margin-right: 0.5rem;
 }
 
