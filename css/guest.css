@@ -123,18 +123,18 @@ html[data-bs-theme="light"] .btn-transparent {
 #welcome .welcome-content h2,
 #welcome .welcome-content p,
 #welcome .welcome-content #guest-name {
-    color: #5E4512 !important;
+    color: #731111 !important;
 }
 
 #welcome .btn-light {
-    color: #ffffff !important;
-    background-color: #5E4512 !important;
+    color: #F6D9D6 !important;
+    background-color: #731111 !important;
     border-color: transparent !important;
     border: none !important;
 }
 
 #welcome .btn-light .fa-solid {
-    color: #ffffff !important;
+    color: #F6D9D6 !important;
 }
 
 .welcome-couple-name span {
@@ -225,6 +225,7 @@ section#comment .btn-primary {
 }
 
 section#gift .btn-secondary,
+section#comment .btn-secondary,
 section#comment .btn-primary {
     background-color: #731111 !important;
     color: #F6D9D6 !important;
@@ -234,6 +235,8 @@ section#comment .btn-primary {
 
 section#gift .btn-secondary:hover,
 section#gift .btn-secondary:focus,
+section#comment .btn-secondary:hover,
+section#comment .btn-secondary:focus,
 section#comment .btn-primary:hover,
 section#comment .btn-primary:focus {
     background-color: #731111 !important;
@@ -257,6 +260,31 @@ section#gift .gift-cta i {
     color: #F6D9D6 !important;
 }
 
+section#gift .btn-outline-auto[data-copy],
+section#comment .btn-outline-auto[data-copy] {
+    background-color: #731111 !important;
+    color: #F6D9D6 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+section#gift .btn-outline-auto[data-copy] i,
+section#comment .btn-outline-auto[data-copy] i,
+section#comment .btn-secondary i {
+    color: #F6D9D6 !important;
+}
+
+section#gift .btn-outline-auto[data-copy]:hover,
+section#comment .btn-outline-auto[data-copy]:hover,
+section#gift .btn-outline-auto[data-copy]:focus,
+section#comment .btn-outline-auto[data-copy]:focus {
+    background-color: #731111 !important;
+    color: #F6D9D6 !important;
+    border: none !important;
+}
+
+section#comment .btn-secondary:hover i,
+section#comment .btn-secondary:focus i,
 section#comment .btn-primary i {
     color: #F6D9D6 !important;
 }
@@ -376,10 +404,9 @@ html[data-bs-theme="dark"] .bg-white-black {
 }
 
 #home .btn-outline-auto {
-    color: #ffffff !important;
-    background-color: rgba(241, 223, 177, 0.96) !important;
-    border-color: transparent !important;
-    border: none !important;
+    color: rgba(241, 223, 177, 0.96) !important;
+    background-color: transparent !important;
+    border: 1.1px solid rgba(241, 223, 177, 0.96) !important;
     box-shadow: none !important;
     display: inline-flex !important;
     align-items: center !important;
@@ -393,13 +420,13 @@ html[data-bs-theme="dark"] .bg-white-black {
 #home .btn-outline-auto:hover,
 #home .btn-outline-auto:focus,
 #home .btn-outline-auto:active {
-    color: #ffffff !important;
-    background-color: #5E4512 !important;
-    border-color: transparent !important;
+    color: rgba(241, 223, 177, 0.96) !important;
+    background-color: transparent !important;
+    border-color: rgba(241, 223, 177, 0.96) !important;
 }
 
 #home .btn-outline-auto .fa-solid {
-    color: #ffffff !important;
+    color: rgba(241, 223, 177, 0.96) !important;
     margin-right: 0.5rem;
 }
 
