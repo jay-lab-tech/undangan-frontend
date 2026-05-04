@@ -209,9 +209,9 @@ section#comment .btn-primary {
 
 section#gift .btn-secondary,
 section#comment .btn-primary {
-    background-color: #ffffff !important;
-    color: #731111 !important;
-    border-color: #731111 !important;
+    background-color: #731111 !important;
+    color: #F6D9D6 !important;
+    border: none !important;
     box-shadow: none !important;
 }
 
@@ -219,9 +219,29 @@ section#gift .btn-secondary:hover,
 section#gift .btn-secondary:focus,
 section#comment .btn-primary:hover,
 section#comment .btn-primary:focus {
-    background-color: #f5f5f5 !important;
-    color: #731111 !important;
-    border-color: #731111 !important;
+    background-color: #731111 !important;
+    color: #F6D9D6 !important;
+    border: none !important;
+}
+
+section#gift .gift-cta {
+    border: none !important;
+    background-color: #731111 !important;
+    color: #F6D9D6 !important;
+}
+
+section#gift .gift-cta:hover,
+section#gift .gift-cta:focus {
+    background-color: #731111 !important;
+    color: #F6D9D6 !important;
+}
+
+section#gift .gift-cta i {
+    color: #F6D9D6 !important;
+}
+
+section#comment .btn-primary i {
+    color: #F6D9D6 !important;
 }
 
 section#gift .gift-intro-icon,
