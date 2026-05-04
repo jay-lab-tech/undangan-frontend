@@ -353,25 +353,31 @@ html[data-bs-theme="dark"] .bg-white-black {
 #home .text-secondary,
 #home .mouse-animation,
 #home .mouse-animation .scroll-animation {
-    color: #5E4512 !important;
-    border-color: #5E4512 !important;
+    color: rgba(241, 223, 177, 0.96) !important;
+    border-color: rgba(241, 223, 177, 0.96) !important;
 }
 
 #home .mouse-animation {
-    border-color: #5E4512 !important;
+    border-color: rgba(241, 223, 177, 0.96) !important;
 }
 
 #home .mouse-animation .scroll-animation {
-    background-color: #5E4512 !important;
+    background-color: rgba(241, 223, 177, 0.96) !important;
 }
 
 #home p.text-secondary {
-    color: #5E4512 !important;
+    color: rgba(241, 223, 177, 0.96) !important;
+}
+
+#home,
+#home * {
+    color: rgba(241, 223, 177, 0.96) !important;
+    fill: rgba(241, 223, 177, 0.96) !important;
 }
 
 #home .btn-outline-auto {
     color: #ffffff !important;
-    background-color: #5E4512 !important;
+    background-color: rgba(241, 223, 177, 0.96) !important;
     border-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
