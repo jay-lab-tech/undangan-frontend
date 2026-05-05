@@ -225,6 +225,8 @@ section#comment .btn-primary {
 }
 
 section#gift .btn-secondary,
+section#gift .btn-outline-auto,
+section#comment .btn-outline-auto,
 section#comment .btn-secondary,
 section#comment .btn-primary {
     background-color: #731111 !important;
@@ -234,7 +236,10 @@ section#comment .btn-primary {
 }
 
 section#gift .btn-secondary:hover,
-section#gift .btn-secondary:focus,
+section#gift .btn-outline-auto:hover,
+section#gift .btn-outline-auto:focus,
+section#comment .btn-outline-auto:hover,
+section#comment .btn-outline-auto:focus,
 section#comment .btn-secondary:hover,
 section#comment .btn-secondary:focus,
 section#comment .btn-primary:hover,
@@ -270,7 +275,12 @@ section#comment .btn-outline-auto[data-copy] {
 
 section#gift .btn-outline-auto[data-copy] i,
 section#comment .btn-outline-auto[data-copy] i,
-section#comment .btn-secondary i {
+section#gift .btn-outline-auto i,
+section#comment .btn-outline-auto i,
+section#gift .btn-outline-auto .fa-solid,
+section#comment .btn-outline-auto .fa-solid,
+section#comment .btn-secondary i,
+section#comment .btn-secondary .fa-solid {
     color: #F6D9D6 !important;
 }
 
