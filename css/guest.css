@@ -166,10 +166,11 @@ html[data-bs-theme="dark"] .bg-light-dark {
 
 section#gift,
 section#comment {
-    background-image: url("../assets/images/bg-pink.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("../assets/images/bg-pink-new.webp");
+    background-size: auto auto;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: scroll;
     color: #731111;
 }
 
